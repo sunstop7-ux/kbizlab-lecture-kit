@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>법인컨설팅 강의·수강생 자료실 | KbizLab 강민수 기업성장연구소</title>
+<meta name="description" content="KbizLab 강민수 기업성장연구소의 법인컨설팅 강의 자료실. 법인 설립·지배구조, 자본구조·가지급금, 가업승계·증여특례, 기업부설연구소·벤처·노무 지원제도 자료를 한 번에 내려받으세요.">
+<meta property="og:title" content="법인컨설팅 강의·수강생 자료실 | KbizLab 강민수 기업성장연구소">
+<meta property="og:description" content="4대 핵심 커리큘럼 강의안, AI 프롬프트, 실무 체크리스트, 참고자료를 한 곳에서.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b3b2e'/%3E%3Ctext x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='%23e8c88a' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#10231d;
+    --ink-soft:#3f5148;
+    --emerald:#0b3b2e;
+    --emerald-2:#14523f;
+    --cream:#f7f3e8;
+    --cream-2:#efe8d6;
+    --gold:#c9a45c;
+    --gold-soft:#e8c88a;
+    --line:rgba(16,35,29,.12);
+    --radius:18px;
+    --shadow:0 10px 30px rgba(11,59,46,.08);
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Noto Sans KR",sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.65;
+    word-break:keep-all;
+  }
+  a{color:inherit}
+  .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 20px}
+
+  /* header */
+  .site-head{
+    background:var(--emerald);
+    color:#f4efe2;
+    border-bottom:3px solid var(--gold);
+  }
+  .site-head .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:12px;padding-top:14px;padding-bottom:14px;
+  }
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+  .brand-mark{
+    width:34px;height:34px;flex:0 0 34px;border-radius:9px;
+    background:linear-gradient(160deg,var(--gold-soft),var(--gold));
+    color:#0b3b2e;font-weight:800;display:grid;place-items:center;font-size:17px;
+  }
+  .brand-text{min-width:0}
+  .brand-text strong{display:block;font-size:15px;letter-spacing:.2px}
+  .brand-text span{display:block;font-size:11.5px;color:#c8d6cd;letter-spacing:.4px}
+  .head-links{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+  .head-links a{
+    text-decoration:none;font-size:12.5px;color:#e9e1cd;
+    border:1px solid rgba(233,225,205,.35);border-radius:999px;padding:5px 11px;white-space:nowrap;
+  }
+  .head-links a:hover{background:rgba(233,225,205,.12)}
+
+  /* hero */
+  .hero{
+    background:
+      radial-gradient(1200px 380px at 15% -10%, rgba(201,164,92,.28), transparent 60%),
+      linear-gradient(180deg,var(--emerald) 0%, var(--emerald-2) 60%, #f7f3e8 60%);
+    padding:38px 0 0;
+  }
+  .hero-inner{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(232,200,138,.28);
+    border-radius:22px;
+    padding:26px 22px 24px;
+    color:#f6f1e4;
+    box-shadow:0 18px 40px rgba(6,28,22,.28);
+    backdrop-filter:blur(2px);
+  }
+  .eyebrow{
+    display:inline-block;font-size:11.5px;letter-spacing:1.6px;text-transform:uppercase;
+    color:var(--gold-soft);border:1px solid rgba(232,200,138,.45);
+    border-radius:999px;padding:3px 10px;margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:clamp(23px,5.4vw,38px);line-height:1.3;margin:0 0 12px;letter-spacing:-.4px;
+  }
+  .hero h1 em{font-style:normal;color:var(--gold-soft)}
+  .hero p.lead{margin:0 0 20px;font-size:clamp(14px,3.6vw,16px);color:#dbe5dd;max-width:56ch}
+  .cta-row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    text-decoration:none;font-weight:700;font-size:15px;
+    border-radius:12px;padding:13px 20px;border:1px solid transparent;
+    transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn-gold{background:linear-gradient(160deg,var(--gold-soft),var(--gold));color:#132a22;box-shadow:0 8px 18px rgba(201,164,92,.35)}
+  .btn-ghost{background:transparent;color:#f2ecdd;border-color:rgba(242,236,221,.45)}
+  .btn-ghost:hover{background:rgba(242,236,221,.1)}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font-size:12.5px;color:#c3d2c9}
+  .hero-meta span::before{content:"·";margin-right:6px;color:var(--gold-soft)}
+  .hero-meta span:first-child::before{content:"";margin:0}
+
+  /* sections */
+  main{padding-bottom:10px}
+  section{padding:44px 0 6px}
+  .sec-head{margin-bottom:20px}
+  .sec-kicker{font-size:11.5px;letter-spacing:1.8px;color:var(--gold);font-weight:700;text-transform:uppercase}
+  .sec-head h2{font-size:clamp(20px,4.4vw,27px);margin:6px 0 6px;letter-spacing:-.3px}
+  .sec-head p{margin:0;color:var(--ink-soft);font-size:14.5px;max-width:62ch}
+
+  /* curriculum */
+  .grid{display:grid;gap:14px}
+  @media(min-width:640px){.grid.two{grid-template-columns:1fr 1fr}}
+  @media(min-width:900px){.grid.four{grid-template-columns:repeat(4,1fr)}}
+  @media(min-width:640px) and (max-width:899px){.grid.four{grid-template-columns:1fr 1fr}}
+
+  .card{
+    background:#fffdf7;border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;box-shadow:var(--shadow);position:relative;overflow:hidden;
+  }
+  .card::after{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:4px;
+    background:linear-gradient(180deg,var(--gold),var(--gold-soft));
+  }
+  .card .num{
+    font-size:12px;font-weight:800;letter-spacing:1.4px;color:var(--gold);
+  }
+  .card h3{font-size:16.5px;margin:6px 0 8px;line-height:1.4;letter-spacing:-.2px}
+  .card p{margin:0 0 12px;font-size:13.5px;color:var(--ink-soft)}
+  .card ul{margin:0;padding-left:0;list-style:none;font-size:13px;color:var(--ink-soft)}
+  .card ul li{position:relative;padding-left:14px;margin-bottom:5px}
+  .card ul li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:2px;background:var(--gold-soft)}
+  .card a.card-link{
+    display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--emerald-2);
+    text-decoration:none;border-bottom:2px solid var(--gold-soft);padding-bottom:1px;
+  }
+
+  /* folders */
+  .folder{
+    display:block;text-decoration:none;background:#fffdf7;border:1px solid var(--line);
+    border-radius:var(--radius);padding:18px 18px 16px;box-shadow:var(--shadow);
+    transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .folder:hover{transform:translateY(-2px);border-color:rgba(201,164,92,.6);box-shadow:0 14px 32px rgba(11,59,46,.12)}
+  .folder .fname{
+    display:inline-block;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:12.5px;color:var(--emerald-2);background:var(--cream-2);
+    border-radius:6px;padding:2px 7px;margin-bottom:8px;
+  }
+  .folder strong{display:block;font-size:15px;margin-bottom:4px}
+  .folder span.desc{font-size:13px;color:var(--ink-soft)}
+
+  /* steps */
+  .steps{counter-reset:step;display:grid;gap:12px}
+  @media(min-width:780px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{
+    background:#fffdf7;border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 18px 16px;box-shadow:var(--shadow);
+  }
+  .step::before{
+    counter-increment:step;content:counter(step);
+    display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;
+    background:var(--emerald);color:var(--gold-soft);font-weight:800;font-size:13px;margin-bottom:8px;
+  }
+  .step strong{display:block;font-size:14.5px;margin-bottom:4px}
+  .step p{margin:0;font-size:13px;color:var(--ink-soft)}
+
+  /* contact */
+  .contact{
+    margin-top:40px;background:var(--emerald);color:#f2ecdd;border-radius:22px;
+    padding:28px 22px;box-shadow:0 18px 40px rgba(6,28,22,.22);
+  }
+  .contact h2{font-size:clamp(19px,4.2vw,24px);margin:0 0 8px;color:#fff8e8}
+  .contact p{margin:0 0 18px;font-size:14px;color:#cfdbd3}
+  .contact-grid{display:grid;gap:10px}
+  @media(min-width:700px){.contact-grid{grid-template-columns:1fr 1fr}}
+  .contact-grid a{
+    display:flex;align-items:center;gap:10px;text-decoration:none;
+    background:rgba(255,255,255,.07);border:1px solid rgba(232,200,138,.28);
+    border-radius:12px;padding:12px 14px;font-size:14px;color:#f6f1e4;
+  }
+  .contact-grid a:hover{background:rgba(232,200,138,.16)}
+  .contact-grid .k{font-size:11px;color:var(--gold-soft);letter-spacing:1px;display:block}
+  .contact-grid .v{font-weight:700;word-break:break-all}
+
+  footer{padding:26px 0 40px;color:#5d6f66;font-size:12.5px}
+  footer .note{
+    background:#fffdf7;border:1px dashed rgba(16,35,29,.18);border-radius:14px;
+    padding:14px 16px;margin-bottom:18px;color:#4a5c53;font-size:12.5px;
+  }
+  footer .copy{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between}
+
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <span class="brand-mark">K</span>
+      <span class="brand-text">
+        <strong>KbizLab 강민수 기업성장연구소</strong>
+        <span>법인컨설팅 강의·수강생 자료실</span>
+      </span>
+    </a>
+    <nav class="head-links">
+      <a href="https://github.com/sunstop7-ux/kbizlab-lecture-kit">GitHub</a>
+      <a href="https://www.youtube.com/@KbizLab기업성장연구소">유튜브</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">Lecture Kit · 2026</span>
+      <h1>법인컨설팅 <em>강의·수강생 자료실</em></h1>
+      <p class="lead">
+        법인 설립·지배구조부터 자본구조, 가업승계, 연구소·벤처·노무 지원제도까지 —
+        강의에서 다루는 4대 핵심 커리큘럼의 강의안·프롬프트·체크리스트를 한곳에 모았습니다.
+        필요한 자료를 골라 받거나, 전체를 한 번에 내려받으세요.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit/archive/refs/heads/main.zip">
+          ⬇ 전체 자료 ZIP 다운로드
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit#readme">
+          GitHub에서 보기
+        </a>
+      </div>
+      <div class="hero-meta">
+        <span>4개 모듈 · 6개 세부 문서</span>
+        <span>모바일·PC 최적화</span>
+        <span>수강생 개인 학습용</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <section id="curriculum">
+      <div class="sec-head">
+        <div class="sec-kicker">Curriculum</div>
+        <h2>4대 핵심 커리큘럼</h2>
+        <p>각 모듈은 <strong>개념 정리 → 사례·판례 → 우리 회사 적용 워크시트</strong> 순서로 진행합니다. 모듈을 이어 들으면 설립부터 승계까지 한 사이클이 완성됩니다.</p>
+      </div>
+      <div class="grid four">
+        <div class="card">
+          <div class="num">MODULE 01</div>
+          <h3>법인 설립·지배구조</h3>
+          <p>"회사를 어떻게 세우고, 누가 무엇을 결정하는가"</p>
+          <ul>
+            <li>법인 형태와 설립 절차</li>
+            <li>자본금·주식·의결권 설계</li>
+            <li>정관·주주간계약 핵심 조항</li>
+            <li>소수주주 분쟁 예방</li>
+          </ul>
+          <a class="card-link" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit/blob/main/01-강의안-커리큘럼/01-법인-설립과-지배구조.md">강의안 보기 →</a>
+        </div>
+        <div class="card">
+          <div class="num">MODULE 02</div>
+          <h3>자본구조·가지급금·이익잉여금</h3>
+          <p>"회사의 돈은 어디서 와서 어디로 가는가"</p>
+          <ul>
+            <li>자기자본과 부채 설계(CB·투자조합)</li>
+            <li>가지급금 발생 원인과 인정이자</li>
+            <li>정리 4가지 방법 비교</li>
+            <li>배당·무상증자·감자</li>
+          </ul>
+          <a class="card-link" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit/blob/main/01-강의안-커리큘럼/02-자본구조와-가지급금.md">강의안 보기 →</a>
+        </div>
+        <div class="card">
+          <div class="num">MODULE 03</div>
+          <h3>가업승계·증여특례</h3>
+          <p>"회사를 다음 세대로 어떻게 넘기는가"</p>
+          <ul>
+            <li>승계 3경로와 타이밍</li>
+            <li>가업상속공제 요건·사후관리</li>
+            <li>가업승계 증여특례</li>
+            <li>5~10년 승계 로드맵</li>
+          </ul>
+          <a class="card-link" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit/blob/main/01-강의안-커리큘럼/03-가업승계와-증여특례.md">강의안 보기 →</a>
+        </div>
+        <div class="card">
+          <div class="num">MODULE 04</div>
+          <h3>연구소·벤처·노무/고용지원금</h3>
+          <p>"지원제도와 노무 리스크를 함께 관리하는가"</p>
+          <ul>
+            <li>기업부설연구소 신고·R&amp;D 공제</li>
+            <li>벤처기업확인 유형</li>
+            <li>고용지원금·세액공제 매칭</li>
+            <li>근로계약·수당·퇴직금 점검</li>
+          </ul>
+          <a class="card-link" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit/blob/main/01-강의안-커리큘럼/04-연구소-벤처-노무.md">강의안 보기 →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="folders">
+      <div class="sec-head">
+        <div class="sec-kicker">Folders</div>
+        <h2>폴더별 자료</h2>
+        <p>필요한 폴더만 열어 파일 단위로 받을 수 있습니다.</p>
+      </div>
+      <div class="grid two">
+        <a class="folder" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit/tree/main/01-강의안-커리큘럼">
+          <span class="fname">01-강의안-커리큘럼/</span>
+          <strong>모듈별 강의안과 학습목표</strong>
+          <span class="desc">4개 모듈의 세션 구성, 시간 배분, 워크시트 안내</span>
+        </a>
+        <a class="folder" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit/tree/main/02-AI-프롬프트">
+          <span class="fname">02-AI-프롬프트/</span>
+          <strong>컨설팅 실무 AI 프롬프트</strong>
+          <span class="desc">지분 희석 시뮬레이션, 승계 시나리오, 지원제도 매칭 등 8종</span>
+        </a>
+        <a class="folder" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit/tree/main/03-실무-체크리스트">
+          <span class="fname">03-실무-체크리스트/</span>
+          <strong>단계별 점검표</strong>
+          <span class="desc">설립·자본·승계·지원제도·노무 5종 체크리스트</span>
+        </a>
+        <a class="folder" href="https://github.com/sunstop7-ux/kbizlab-lecture-kit/tree/main/04-참고자료">
+          <span class="fname">04-참고자료/</span>
+          <strong>용어 정리와 공식 확인처</strong>
+          <span class="desc">핵심 용어 40여 개, 국세청·중기부·KOITA 등 공식 링크</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="sec-head">
+        <div class="sec-kicker">How to use</div>
+        <h2>받는 방법</h2>
+        <p>휴대폰에서는 앱 설치 없이 이 페이지에서 바로 확인할 수 있습니다.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <strong>전체를 한 번에</strong>
+          <p>위의 <b>전체 자료 ZIP 다운로드</b> 버튼을 누르면 모든 폴더가 압축된 파일을 받습니다.</p>
+        </div>
+        <div class="step">
+          <strong>필요한 파일만</strong>
+          <p>폴더를 열고 원하는 파일에서 <b>Download raw file</b> 을 누르면 그 파일만 저장됩니다.</p>
+        </div>
+        <div class="step">
+          <strong>수업 중 바로 보기</strong>
+          <p>강의 현장에서는 이 페이지를 즐겨찾기에 추가해 두고 체크리스트를 화면으로 띄워 쓰세요.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <h2>강의·출강 문의</h2>
+        <p>기업 임원·관리자 대상 집체 교육, 컨설팅 연계 워크숍, 온라인 강의로 진행합니다.</p>
+        <div class="contact-grid">
+          <a href="tel:01083536477"><span class="k">PHONE</span><span class="v">010-8353-6477</span></a>
+          <a href="mailto:sunstop7@gmail.com"><span class="k">EMAIL</span><span class="v">sunstop7@gmail.com</span></a>
+          <a href="https://www.youtube.com/@KbizLab기업성장연구소"><span class="k">YOUTUBE</span><span class="v">@KbizLab기업성장연구소</span></a>
+          <a href="https://blog.naver.com/sunstop7"><span class="k">BLOG</span><span class="v">blog.naver.com/sunstop7</span></a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="note">
+      <b>이용 안내</b> — 본 자료는 강의 수강생의 개인 학습용입니다. 출처를 밝히는 인용은 환영하지만 무단 복제·재배포·상업적 이용은 삼가 주세요.
+      세법·지원제도 요건은 개정이 잦으므로, 실제 의사결정 전에 최신 기준과 전문가(세무사·변호사·노무사) 검토를 확인하세요.
+      본 자료는 일반 정보 제공을 목적으로 하며 특정 회사에 대한 세무·법률 자문이 아닙니다.
+    </div>
+    <div class="copy">
+      <span>© KbizLab 강민수 기업성장연구소</span>
+      <span>법인컨설팅 강의·수강생 자료실</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
